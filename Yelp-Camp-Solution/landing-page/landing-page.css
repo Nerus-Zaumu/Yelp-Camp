@@ -1,0 +1,133 @@
+body{
+    margin: 0px;
+}
+
+.container{
+    width: 100vw;
+    display: flex;
+}
+
+.information,
+.box{
+    width: 50%;
+    height: 100vh;
+}
+
+.container > .information > div,
+.footer{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo{
+    margin-top: 5vh;
+}
+
+.container > .information > .header{
+    margin-top: 15vh;
+}
+
+.header > h1{
+    font-weight: bolder;
+    font-size: larger;
+    font-size: 3.8rem;
+    padding: 0px;
+    margin: 0;
+}
+
+.header > p,
+.header > ul > li,
+.footer > h3{
+    color: gray;
+    padding: 0;
+    margin: 0;
+}
+
+.header > ul{
+    display: block;
+    padding-left: 1vw;
+}
+
+.header > ul > li{
+    list-style-type: circle;
+    line-height: 5vh;
+    font-size: 1.2rem;
+}
+
+.header > button{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    width: fit-content;
+    height: 7vh;
+    border-width: 0;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.header > button:active{
+    background-color: #1a1818;
+}
+
+.footer > footer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box img{
+    width: 100%;
+    height: 100%;
+}
+
+.box .logo{
+    display: none;
+}
+
+.tab-hero{
+    display: none;
+}
+
+.box1 img {
+    object-fit: fill;
+}
+
+@media(max-width: 1050px){
+    .container{
+        margin: 0px;
+    }
+
+    .box img, .information{
+        width: 100vw;
+    }
+
+    .information > .logo{
+        display: none;
+    }
+
+    .box > .logo{
+        display: block;
+        height: 5vh;
+        margin-bottom: 5vh;
+        margin-left: -25vw;
+    }
+
+    .main-hero{
+        display: none;
+        margin: 0px;
+    }
+
+    .tab-hero{
+        display: block;
+        margin: 0px;
+    }
+    
+    .container{
+        flex-direction: column-reverse;
+        margin: 0px;
+    }
+    
+}
+
+
