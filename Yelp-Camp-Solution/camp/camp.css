@@ -1,0 +1,116 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+body > *{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    width: 100%;
+}
+
+.container .header{
+    width: 90%;
+    margin-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .header > div{
+    display: flex;
+    justify-content: center;
+}
+
+.container .header > div button{
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    border-width: 0;
+    justify-content: space-evenly;
+}
+
+.header > .left button{
+    background-color: inherit;
+    color: gray;
+    font-family: sans-serif;
+}
+
+
+.btns-unlogged button{
+    background-color: inherit;
+    font-family: inherit;
+    font-family: sans-serif;
+}
+
+#create{
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    background-color: black;
+    border-radius: 5px;
+}
+
+#login,
+#logout{
+    color: gray;
+    background-color: white;
+}
+
+#username{
+    background-color: white;
+    color: black;
+}
+
+.container .header .right .hamburger{
+    align-self: center;
+    display: none;
+}
+
+/* Hide display for login and signup buttons for testing purposes*/
+.btns-unlogged{
+    display: none;
+}
+
+@media(max-width: 750px){
+    .container .header .btns-unlogged,
+    .container .header .right .btns-logged{
+        display: none;
+    }
+
+    .container .header .right .hamburger{
+        display: block;
+    }
+}
+
+.main-content{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+    display: flex;
+}
+
+.main-content #map{
+    border-width: 1px;
+    border-color: gray;
+    height: auto;
+}
+
+.main-content #top{
+    border-width: 200px;
+    border-color: blue;
+    width: 300px;
+}
+
+.main-content #top img{
+    width: 220px;
+    margin: auto;
+}
