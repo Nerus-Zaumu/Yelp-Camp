@@ -23,6 +23,20 @@ body > * {
     margin: auto;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.navbar a{
+    color: black;
+}
+
+.home-btn button{
+    color: black;
+}
+
 .container .navbar{
     width: 100%;
     height: fit-content;

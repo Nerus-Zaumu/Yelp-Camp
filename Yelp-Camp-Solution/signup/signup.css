@@ -24,7 +24,7 @@ body{
 .container .right-side{
     width: 40%;
     height: 100vh;
-    margin: 0px;
+    margin: auto;
     padding: 0px;
 }
 
@@ -126,6 +126,17 @@ form p > u{
     font-family: sans-serif;
 }
 
+button a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+p a{
+    color: turquoise;
+    font-size: 1.2rem;
+}
+
 .content .testifier{
     display: flex;
 }
@@ -162,6 +173,7 @@ form p > u{
         margin-left: auto;
         margin-right: auto;
         margin-top: 10vh;
+        padding-bottom: 7vh;
     }
 
     .container .right-side .content{
