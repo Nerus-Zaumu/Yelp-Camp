@@ -13,6 +13,8 @@ body > *{
 
 .container{
     width: 100%;
+    margin: 0px;
+    padding: 0px;
 }
 
 .container .header{
@@ -91,26 +93,108 @@ body > *{
 }
 
 .main-content{
+    display: flex;
     width: 90%;
+    margin: auto;
+    padding-top: 7vh;
+    justify-content: space-between;
+}
+
+.main-content > div{
+    border: 1px solid gray;
+}
+
+.left-content{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.left-content img{
+    width: 75%;
+    height: 50%;
+}
+
+.right-content{
+    width: 60%;
+    margin: auto;
+}
+
+.pic{
+    display: flex;
+    justify-content: center;
+    margin-top: 3vh;
+}
+
+
+.right-content .pic img{
+    width: 85%;
+    height: 85%;
+}
+
+.right-content .box img{
+    object-fit: contain;
+}
+
+.desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 85%;
+    margin: auto;
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.title h3,
+.title h5{
+    font-weight: bold;
+}
+
+@media(max-width: 900px){
+    .main-content{
+        flex-direction: column-reverse;
+    }
+    .main-content > div{
+        margin: auto;
+        width: 100%;
+    }
+  
+}
+
+.camp-comments{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin: auto;
+}
+.camp-comments > div > div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.camp-comments > div > div h5, p{
+    color: rgb(34, 32, 32);
+}
+
+.c1, .c2, .c3{
+    border-bottom: 1px solid gray;
+}
+
+.footer{
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5vh;
     display: flex;
+    justify-content: start;
 }
 
-.main-content #map{
-    border-width: 1px;
-    border-color: gray;
+.footer img{
+    width: 100px;
     height: auto;
-}
-
-.main-content #top{
-    border-width: 200px;
-    border-color: blue;
-    width: 300px;
-}
-
-.main-content #top img{
-    width: 220px;
-    margin: auto;
+    padding-top: 5vh;
+    margin-bottom: 5vh;
 }

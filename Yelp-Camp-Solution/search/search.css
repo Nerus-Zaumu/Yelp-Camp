@@ -1,0 +1,109 @@
+.top-section{
+    width: 90%;
+    margin: auto;
+    font-family: sans-serif;
+    background-color: #dddada;
+    margin-top: 3vh;
+}
+
+.top-section p{
+    color: gray;
+}
+
+.top-section input{
+    border: .1em solid gray;
+    border-radius: 2px;
+    height: 5vh;
+}
+
+.top-section button{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border: 0;
+    border-radius: 2px;
+    height: 5vh;
+}
+
+.top-section a {
+    color: gray;
+}
+
+.or{
+    padding-top: 2vh;
+    padding-bottom: 5vh;
+}
+
+.top-section > div{
+    width: 30%;
+}
+
+@media(max-width: 900px){
+    .top-section > div{
+        width: 100%;
+        margin: auto;
+    }
+}
+
+.bottom-section{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 5vh;
+}
+
+.bottom-section .b1 {
+    display: flex;
+    flex-direction: column;
+    width: 33.3%;
+    margin-left: auto;
+}
+
+.image{
+    margin: auto;
+}
+
+.image img{
+    width: 95%;
+    height: 95%;
+}
+
+.box img{
+    object-fit: contain;
+}
+
+.btn{
+    padding-bottom: 3vh;
+}
+
+.btn button{
+    width: 150px;
+    height: 50px;
+    color: black;
+    background-color: rgb(250, 243, 243);
+    border: 0;
+    border-radius: 5px;
+}
+
+.info{
+    width: 85%;
+}
+
+@media(max-width: 900px){
+    .bottom-section .b1{
+        width: 50%;
+    }
+}
+
+@media(max-width: 550px){
+    .bottom-section .b1{
+        width: 100%;
+        margin: auto;
+    }
+}
+
+input{
+    font-size: 16px;
+}
